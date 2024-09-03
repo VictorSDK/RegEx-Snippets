@@ -97,6 +97,12 @@ elements
 \[\"$1\"\] = new JObject \{
 ```
 
+***JSON to C# property***
+```
+\“(\w+)\”: (.*),?
+public string \u$1 { get; set; }
+```
+
 ***JSON to something else***
 ```
 \“(\w+)\”: (.*),
